@@ -5,28 +5,107 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Liam Eletrônicos - Músicas</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo para centralizar o conteúdo */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 0;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        /* Estilo para a seção principal */
+        main {
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .album {
+            margin-bottom: 40px;
+        }
+
+        .album img {
+            width: 100%;
+            max-width: 560px;
+            height: auto;
+            border: 2px solid #333;
+            margin: 0 auto;
+        }
+
+        .album p {
+            font-size: 1.1rem;
+            margin-top: 10px;
+        }
+
+        .album a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px 0;
+            display: inline-block;
+        }
+
+        .album a:hover {
+            color: #007bff;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 10px;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            text-align: center;
+        }
+    </style>
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <center>
                 <li><a href="index.html">Loja</a></li>
                 <li><a href="musicas.html">Músicas</a></li>
                 <li><a href="sobre.html">Sobre nós</a></li>
-                </center>
             </ul>
         </nav>
     </header>
 
     <main>
         <h1>Músicas</h1>
-        
-        <!-- Embed do vídeo do YouTube com autoplay -->
+
+        <!-- Primeiro lançamento -->
         <div class="album">
             <p>Primeiro lançamento dia 31/03/2025</p>
-            <iframe width="560" height="315" 
-                    src="https://www.youtube.com/embed/_538pmVAYlQ?autoplay=1" 
+            <iframe src="https://www.youtube.com/embed/_538pmVAYlQ?autoplay=1" 
                     frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <p>
                 <a href="https://ditto.fm/meu-lado-ninja" target="_blank">Ouça no YouTube</a><br>
@@ -34,8 +113,11 @@
             </p>
         </div>
 
+        <!-- Segundo lançamento com imagem -->
         <div class="album">
-            <p>Primeiro lançamento dia 31/03/2025</p>
+            <p>Segundo lançamento dia 31/03/2025</p>
+            <!-- Substituindo o YouTube pelo link da imagem -->
+            <img src="images/albuns.jpg" alt="Álbum">
             <p>
                 <a href="https://ditto.fm/meu-lado-ninja" target="_blank">Ouça no YouTube</a><br>
                 <a href="https://ditto.fm/meu-lado-ninja" target="_blank">Ouça no Spotify</a>
@@ -48,3 +130,4 @@
     </footer>
 </body>
 </html>
+
